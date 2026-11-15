@@ -10,7 +10,7 @@ What is left, in the order that would add the most. Items 1 to 3 need things tha
 
 ## Needs the author
 
-4. Confirm the names in `docs/TEAM.md` and whether the January 2026 sketch is the revision that was presented.
+4. Confirm whether the January 2026 sketch is the revision that was presented (the team lists in `docs/TEAM.md` were confirmed on 2026-11-15).
 5. Add photographs of the built prototype to `docs/HARDWARE.md`.
 
 ## Firmware

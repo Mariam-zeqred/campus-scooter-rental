@@ -1,6 +1,6 @@
 # Team and credits
 
-This was a team graduation project in the Communications and Computer Engineering programme, Faculty of Engineering, Mansoura University. It is documented in two project books; the lists below are copied from their title pages.
+This was a team graduation project in the Communications and Computer Engineering programme, Faculty of Engineering, Mansoura University. It is documented in two project books; the lists below are copied from their title pages. Eight students worked on the project in the first semester and four of them continued in the second semester, when the remaining work needed a smaller team.
 
 ## First book (2025): "Smart E-Scooter Rental System for University Campus"
 
@@ -24,7 +24,7 @@ The books do not attribute chapters to individual students. The division below i
 
 | Part | In the books | In this repository |
 |---|---|---|
-| Cloud infrastructure on AWS | First book, ch. 21 | Rewritten as code in `cloud/` by Mariam Loutfi (listed in the books as Mariam Mohamed Mamdouh), who did the original cloud work and led the team. |
+| Cloud infrastructure on AWS | First book, ch. 21 | Rewritten as code in `cloud/` by Mariam Loutfi (full name Mariam Mohamed Mamdouh Loutfi; the books print it without the family name), who did the original cloud work and led the team. |
 | Hardware and embedded firmware | Final book, ch. 7 to 9 | Rewritten in `firmware/` by the same author, from her surviving prototype sketch. |
 | App design (Figma) | First book, ch. 1 to 5 | Team members' work. Shown in pictures only. |
 | Web front end (React, Tailwind, Vite, Framer Motion) | First book, ch. 6 to 14 | Team members' work. Described only. |

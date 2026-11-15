@@ -164,7 +164,7 @@ See [TODO.md](TODO.md): flash a board and replay the state-machine tests by hand
 
 ## Team and credits
 
-The project was built by a team of students under faculty supervision. Names and roles, as printed in the two project books, are in [docs/TEAM.md](docs/TEAM.md). Screens and diagrams in `docs/img/` come from those books.
+The project was built by a team of students under faculty supervision: eight in the first semester, four in the second. Names and roles, as printed in the two project books, are in [docs/TEAM.md](docs/TEAM.md). Screens and diagrams in `docs/img/` come from those books.
 
 ## Licence
 

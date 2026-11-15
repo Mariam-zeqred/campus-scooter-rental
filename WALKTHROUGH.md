@@ -38,6 +38,6 @@ BLE because unlocking must work instantly and without internet; MQTT because the
 
 Authenticate the unlock. When a ride is booked, the cloud creates a short-lived token signed with a key shared with that scooter (an HMAC over scooter id, trip id and expiry). The phone passes it over BLE; the scooter checks the signature and expiry before accepting `UNLOCK`. It needs one new function in `scooter_core` with host tests and a few lines in the ride API.
 
-## Please check before this goes public
+## Team lists
 
-The two books list different students and supervisors; `docs/TEAM.md` copies both as printed. Confirm the names and how your own name appears (TODO items 4 and 5).
+The first book lists eight students and the final book four, because the team was eight in the first semester and four in the second. `docs/TEAM.md` says so and copies both title pages as printed.
