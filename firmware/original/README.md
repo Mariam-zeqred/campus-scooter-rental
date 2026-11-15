@@ -2,7 +2,7 @@
 
 `scooter_2026-01-25.ino` is a copy of the Arduino sketch found on the author's
 PC (file date 25 January 2026), unchanged. It is the only firmware file from
-the original project that survived, and it is kept here as the reference the
+the original project found so far, and it is kept here as the reference the
 rewrite in `../src` and `../lib/scooter_core` was ported from.
 
 It is not built by PlatformIO (it sits outside `src/`). To run it as it was,

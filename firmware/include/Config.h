@@ -20,6 +20,14 @@ constexpr int PIN_LOCK_SERVO = 13;   // [new] lock servo signal
 constexpr int PIN_GPS_RX = 16;       // [new] UART2 RX <- NEO-6M TX
 constexpr int PIN_GPS_TX = 17;       // [new] UART2 TX -> NEO-6M RX
 
+// ---- What is fitted ---------------------------------------------------------
+// The desk prototype had none of these three. With a flag off, the firmware
+// behaves like the sketch (battery shown as 100 %, no position, no lock servo).
+constexpr bool BATTERY_SENSE_FITTED = false;  // [new]
+constexpr bool GPS_FITTED = false;            // [new]
+constexpr bool LOCK_SERVO_FITTED = false;     // [new]
+constexpr bool CLOUD_LINK_ENABLED = true;     // [new] Wi-Fi + MQTT task; BLE works without it
+
 // ---- Control loop ----------------------------------------------------------
 constexpr uint32_t TICK_MS = 20;                 // [sketch] 50 Hz
 constexpr uint32_t BLE_TELEMETRY_MS = 200;       // [sketch] 5 Hz notify
