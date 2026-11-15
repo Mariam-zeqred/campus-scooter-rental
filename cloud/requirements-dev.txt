@@ -1,0 +1,5 @@
+-r requirements.txt
+boto3
+moto[dynamodb,s3,sns]>=5
+pytest
+ruff
