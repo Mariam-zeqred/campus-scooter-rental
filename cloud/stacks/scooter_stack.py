@@ -107,7 +107,8 @@ class ScooterStack(Stack):
         id_processor = function("IdProcessor", "id_processor",
                                 {"USERS_TABLE": users.table_name, "ALLOWED_ID_HOSTS": allowed_id_hosts},
                                 timeout=20)
-        id_bucket.grant_read(id_processor, "id-scans/*")
+        id_processor.add_to_role_policy(iam.PolicyStatement(
+            actions=["s3:GetObject"], resources=[id_bucket.arn_for_objects("id-scans/*")]))
         users.grant(id_processor, "dynamodb:UpdateItem")
         id_bucket.add_event_notification(
             s3.EventType.OBJECT_CREATED, s3n.LambdaDestination(id_processor),
@@ -122,7 +123,8 @@ class ScooterStack(Stack):
         users.grant(rides, "dynamodb:GetItem")
         scooters.grant(rides, "dynamodb:Scan", "dynamodb:UpdateItem")
         trips.grant(rides, "dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:UpdateItem", "dynamodb:Query")
-        id_bucket.grant_put(rides, "id-scans/*")
+        rides.add_to_role_policy(iam.PolicyStatement(  # for the pre-signed upload link
+            actions=["s3:PutObject"], resources=[id_bucket.arn_for_objects("id-scans/*")]))
         rides.add_to_role_policy(iam.PolicyStatement(
             actions=["iot:Publish"],
             resources=[self.format_arn(service="iot", resource="topic",

@@ -77,7 +77,7 @@ def test_no_lambda_role_has_wildcard_actions(template):
     for policy in template.find_resources("AWS::IAM::Policy").values():
         for statement in policy["Properties"]["PolicyDocument"]["Statement"]:
             actions = statement["Action"] if isinstance(statement["Action"], list) else [statement["Action"]]
-            assert all(not a.endswith(":*") and a != "*" for a in actions), actions
+            assert all("*" not in a for a in actions), actions  # exact actions only
 
 
 def test_topic_rules_select_from_the_books_topic_tree(template):
